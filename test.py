@@ -1,10 +1,6 @@
 # to create a virtual environment
 # python -m venv virtual_env1
 
-import math
-import os
-import sys
-
 import requests
 
 name = input("Your name? ")
@@ -21,3 +17,4 @@ def greet(who):
 
 r = requests.get("https://www.google.com")
 print(r.status_code)
+print(r.ok)
